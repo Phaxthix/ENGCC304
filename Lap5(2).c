@@ -2,7 +2,7 @@
 int main() {
    
     int score = 0 ; 
-    printf( "Enter score" ) ;
+    printf( "Enter score:" ) ;
 
     if (scanf( "%d", &score ) != 1 ) {
         printf( "Please enter number only.\n" ) ;
@@ -32,7 +32,7 @@ int main() {
       printf( "C!" ) ;
       break ;
     case  11 :
-      printf( "D+ !" ) ;
+      printf( "D+!" ) ;
       break ;
     case  10 :
       printf( "D!" ) ;
