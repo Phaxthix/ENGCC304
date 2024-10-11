@@ -1,25 +1,26 @@
 #include <stdio.h>
 
-
 int main() {
-    char  employeesID[10]
-    int hrs, salary ;
-    int month = 24 ;
-    float money ; 
+  char employeesID [ 10 ] ;
+  int hrs ;
+  float salary;
+  int month =28 ;
+  float money =0  ;
     
-    printf( "Input the employees ID(Max. 10 chars): " ) ;
+    printf( " Input the Employees ID (Max. 10 chars): " ) ;
     scanf( "%s", employeesID ) ;
-    printf( "Input the workingv hrs: " ) ;
-    scanf( "%d", &hrs ) ;
-    printf( "salary amount/hr: " ) ;
-    scanf( "%d", &salary ) ;
+
+    printf( "Input the working hrs:" ) ;
+    scanf ( "%d",&hrs) ;
+    printf( " Salary amount/hr: " ) ;
+    scanf( "%f", &salary) ; 
+     
+     money = hrs * salary;
     
-    money = hrs * salary * month ;
+    printf( "Employees ID = %s",employeesID) ;
+    printf( "\nSalary = U$ %.2f ", money ) ;
     
-    printf( "-----------------------------------------------------------/n" ) ;
-    printf( "employees ID = %s /n", employeesID ) ;
-    printf( "salary = U$ %.2f" , money ) ;
-    printf( "/n------------------------------------------------------------" ) ;
-    
-     return 0 ;
-}//end main function
+ return 0 ;
+}
+
+
