@@ -1,16 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int N;
+    int value ;
 
-    // รับค่าตัวเลขจากผู้ใช้
-    printf("Enter value: ");
-    scanf("%d", &N);
-    
-    for (int i = N; i >= 0; i--) {
-        if (i % 2 == 0) {
-            printf("%d ", i);
-        }
-    }
-    return 0;
-}
+    printf( "Enter value: " ) ;
+    scanf( "%d", &value ) ;
+
+    printf( "Series: " ) ;
+    for( int i = value ; i >= 0 ; i -= 2 ) {
+        printf( "%d ", i ) ;
+    }//end for
+
+    printf( "\n" ) ;
+
+    return 0 ;
+
+}//end function
